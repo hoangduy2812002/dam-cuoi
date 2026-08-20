@@ -2,7 +2,6 @@
    THIỆP CƯỚI – Văn Chương & Hồng Thư
    Theme: Xanh Dương Nhạt & Vàng
 ================================================ */
-
 /* --- Reset & Biến --- */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -95,7 +94,8 @@ body {
     z-index: 10;
     /* background: linear-gradient(155deg, #1a5a9e 0%, #0a3060 100%); */
     background: linear-gradient(155deg, #fff0f6 30%, #ffd6e7 100%);
-    border: 1.5px solid #597ef7;
+    /* border: 1.5px solid #8c8c8c; */
+    border: 1.5px solid #8c8c8c;
     border-radius: 4px;
     padding: 44px 52px;
     width: min(460px, 88vw);
@@ -116,7 +116,7 @@ body {
     position: absolute;
     width: 26px;
     height: 26px;
-    border-color: #597ef7;
+    border-color: #8c8c8c;
     border-style: solid;
     opacity: 0.7;
 }
@@ -129,16 +129,16 @@ body {
     justify-content: center;
     width: 54px;
     height: 54px;
-    border: 1.5px solid #597ef7;
+    border: 1.5px solid #8c8c8c;
     border-radius: 50%;
     background: rgba(201, 162, 39, 0.08);
     font-size: 1.8rem;
-    color: #597ef7;
+    color: #8c8c8c;
     margin-bottom: 18px;
 }
 
 .cover-name {
-    font-family: var(--font-script);
+    /* font-family: var(--font-script); */
     color: #eb2f96;
     font-weight: 400;
     line-height: 1.2;
@@ -148,7 +148,7 @@ body {
 
 .cover-and {
     font-family: var(--font-script);
-    color: #597ef7;
+    color: #8c8c8c;
     font-size: 2.1rem;
     line-height: 1;
     margin: 2px 0;
@@ -165,9 +165,9 @@ body {
     display: block;
     height: 1px;
     width: 48px;
-    background: linear-gradient(to right, transparent, #597ef7, transparent);
+    background: linear-gradient(to right, transparent, #8c8c8c, transparent);
 }
-.div-icon { color: #597ef7; font-size: 1rem; }
+.div-icon { color: #8c8c8c; font-size: 1rem; }
 
 .cover-date {
     font-family: var(--font-sans);
@@ -190,7 +190,7 @@ body {
     font-family: var(--font-serif);
     font-size: 1.45rem;
     font-weight: 600;
-    color: #597ef7;
+    color: #8c8c8c;
     line-height: 1.35;
     margin-bottom: 26px;
 }
@@ -286,7 +286,7 @@ body {
     display: block;
     width: 100px;
     height: 1px;
-    background: linear-gradient(to right, transparent, #597ef7, transparent);
+    background: linear-gradient(to right, transparent, #8c8c8c, transparent);
     margin: 0 auto 64px;
 }
 
@@ -321,7 +321,7 @@ body {
 
 .header-groom,
 .header-bride {
-    font-family: var(--font-script);
+    /* font-family: var(--font-script); */
     font-weight: 400;
     color: #c41d7f;
     font-size: clamp(3rem, 9.5vw, 5rem);
@@ -329,7 +329,7 @@ body {
 }
 .header-and {
     font-family: var(--font-script);
-    color: #597ef7;
+    color: #8c8c8c;
     font-size: clamp(1.6rem, 5.5vw, 2.8rem);
     margin: 4px 0;
 }
@@ -371,7 +371,7 @@ body {
     display: none; flex-direction: column;
     align-items: center; justify-content: center;
     gap: 8px;
-    color: #597ef7; opacity: 0.45;
+    color: #8c8c8c; opacity: 0.45;
     font-family: var(--font-sans);
     font-size: 0.75rem; letter-spacing: 0.1em;
 }
@@ -390,7 +390,7 @@ body {
 .lightbox img {
     max-width: 92vw; max-height: 92vh;
     object-fit: contain;
-    border: 1px solid #597ef7;
+    border: 1px solid #8c8c8c;
     border-radius: 4px;
 }
 
@@ -420,11 +420,11 @@ body {
     color: #c41d7f; line-height: 1.5;
 }
 .parents-address {
-    font-size: 0.82rem; color: #597ef7;
+    font-size: 0.82rem; color: #8c8c8c;
     margin-top: 7px; line-height: 1.6;
 }
 .parents-sep {
-    color: #597ef7; font-size: 1.6rem;
+    color: #8c8c8c; font-size: 1.6rem;
     opacity: 0.55; align-self: center; flex-shrink: 0;
 }
 
@@ -436,12 +436,12 @@ body {
 .announce-top {
     font-family: var(--font-sans);
     font-size: 0.72rem; letter-spacing: 0.22em;
-    color: #597ef7; margin-bottom: 4px;
+    color: #8c8c8c; margin-bottom: 4px;
 }
 .announce-sub {
     font-family: var(--font-sans);
     font-size: 0.72rem; letter-spacing: 0.15em;
-    color: #597ef7; margin-bottom: 22px;
+    color: #8c8c8c; margin-bottom: 22px;
 }
 .couple-name {
     font-family: var(--font-script);
@@ -451,11 +451,11 @@ body {
 .couple-title {
     font-family: var(--font-sans);
     font-size: 0.68rem; letter-spacing: 0.28em;
-    color: #597ef7; margin: 5px 0 14px;
+    color: #8c8c8c; margin: 5px 0 14px;
 }
 .couple-and {
     font-family: var(--font-script);
-    font-size: 2.2rem; color:#597ef7; margin: 6px 0;
+    font-size: 2.2rem; color:#8c8c8c; margin: 6px 0;
 }
 
 /* Khối lễ gia tiên tại tư gia */
@@ -463,7 +463,7 @@ body {
     margin-top: 38px;
     /* background: rgba(0, 55, 110, 0.38); */
     background: linear-gradient(155deg, #fff0f6 30%, #ffd6e7 100%);
-    border: 1px solid #597ef7;
+    border: 1px solid #8c8c8c;
     border-radius: 8px;
     padding: 32px 24px;
 }
@@ -471,7 +471,7 @@ body {
     font-family: var(--font-serif);
     font-style: italic;
     font-size: 1rem;
-    color: #597ef7;
+    color: #8c8c8c;
     margin-bottom: 10px;
 }
 .gt-place {
@@ -487,7 +487,7 @@ body {
     font-family: var(--font-sans);
     font-size: 0.8rem;
     letter-spacing: 0.18em;
-    color: #597ef7;
+    color: #8c8c8c;
     margin-bottom: 8px;
 }
 .gt-date {
@@ -503,7 +503,7 @@ body {
     font-family: var(--font-sans);
     font-size: 0.72rem;
     letter-spacing: 0.1em;
-    color: #597ef7;
+    color: #8c8c8c;
 }
 
 /* ================================================
@@ -512,7 +512,7 @@ body {
 .party-card {
     /* background: rgba(0, 55, 110, 0.38); */
     background: linear-gradient(155deg, #fff0f6 30%, #ffd6e7 100%);
-    border: 1px solid #597ef7;
+    border: 1px solid #8c8c8c;
     border-radius: 8px;
     padding: 38px 28px;
     margin-bottom: 38px;
@@ -520,7 +520,7 @@ body {
 .party-card-sub {
     font-family: var(--font-sans);
     font-size: 0.68rem; letter-spacing: 0.22em;
-    color: #597ef7; margin-bottom: 16px;
+    color: #8c8c8c; margin-bottom: 16px;
 }
 .party-time {
     font-family: var(--font-number);
@@ -536,24 +536,24 @@ body {
     align-items: center;
     gap: 14px; margin-bottom: 12px;
 }
-.party-day-name  { font-family: var(--font-sans); font-size: 0.75rem; letter-spacing: 0.15em; color: #597ef7; text-align: right; }
-.party-month-name{ font-family: var(--font-sans); font-size: 0.75rem; letter-spacing: 0.15em; color: #597ef7; text-align: left; }
+.party-day-name  { font-family: var(--font-sans); font-size: 0.75rem; letter-spacing: 0.15em; color: #8c8c8c; text-align: right; }
+.party-month-name{ font-family: var(--font-sans); font-size: 0.75rem; letter-spacing: 0.15em; color: #8c8c8c; text-align: left; }
 .party-date-center{ display: flex; align-items: center; gap: 8px; }
-.date-sep { color: #597ef7; font-size: 1.6rem; }
+.date-sep { color: #8c8c8c; font-size: 1.6rem; }
 .party-day-num {
     font-family: var(--font-number);
     font-size: 3.2rem; font-weight: 700;
-    color: #597ef7; line-height: 1;
+    color: #8c8c8c; line-height: 1;
 }
 .party-year {
     font-family: var(--font-number);
     font-size: 1.05rem; letter-spacing: 0.4em;
-    color: #597ef7; margin-bottom: 8px;
+    color: #8c8c8c; margin-bottom: 8px;
 }
 .party-lunar {
     font-family: var(--font-sans);
     font-size: 0.72rem; letter-spacing: 0.1em;
-    color: #597ef7; margin-bottom: 26px;
+    color: #8c8c8c; margin-bottom: 26px;
 }
 
 .party-schedule {
@@ -566,7 +566,7 @@ body {
 .sched-col { display: flex; flex-direction: column; align-items: center; gap: 5px; }
 .sched-label {
     font-family: var(--font-sans);
-    font-size: 0.64rem; letter-spacing: 0.16em; color: #597ef7;
+    font-size: 0.64rem; letter-spacing: 0.16em; color: #8c8c8c;
 }
 .sched-time {
     font-family: var(--font-number);
@@ -580,7 +580,7 @@ body {
 .cd-title {
     font-family: var(--font-sans);
     font-size: 0.72rem; letter-spacing: 0.22em;
-    color: #597ef7; margin-bottom: 18px;
+    color: #8c8c8c; margin-bottom: 18px;
 }
 .countdown {
     display: flex;
@@ -592,9 +592,9 @@ body {
 .cd-num {
     font-family: var(--font-number);
     font-size: clamp(1.8rem, 6vw, 2.8rem);
-    font-weight: 700; color: #597ef7;
+    font-weight: 700; color: #8c8c8c;
     line-height: 1;
-    color: #597ef7;
+    color: #8c8c8c;
     background: linear-gradient(155deg, #fff0f6 30%, #ffd6e7 100%);
     border: 1px solid var(--border);
     border-radius: 6px;
@@ -605,7 +605,7 @@ body {
 .cd-label {
     font-family: var(--font-sans);
     font-size: 0.58rem; letter-spacing: 0.12em;
-    color: #597ef7; margin-top: 5px;
+    color: #8c8c8c; margin-top: 5px;
 }
 .cd-sep { font-size: 2.2rem; color: var(--gold); opacity: 0.45; margin-top: -10px; }
 
@@ -633,13 +633,13 @@ body {
 }
 .venue-address {
     font-family: var(--font-sans);
-    font-size: 0.85rem; color: #597ef7; letter-spacing: 0.04em;
+    font-size: 0.85rem; color: #8c8c8c; letter-spacing: 0.04em;
 }
 .venue-invite {
     font-family: var(--font-serif);
     font-style: italic;
     font-size: 0.95rem;
-    color: #597ef7;
+    color: #8c8c8c;
     letter-spacing: 0.04em;
     margin: 16px 0 4px;
 }
@@ -652,7 +652,7 @@ body {
     font-family: var(--font-serif);
     font-style: italic;
     font-size: 0.85rem;
-    color: #597ef7;
+    color: #8c8c8c;
     letter-spacing: 0.02em;
     margin-top: 8px;
 }
@@ -673,7 +673,7 @@ body {
     background: linear-gradient(155deg, #fff0f6 30%, #ffd6e7 100%);
     border: 1px solid var(--border);
     border-radius: 6px;
-    color: #597ef7;
+    color: #8c8c8c;
     font-family: var(--font-serif);
     font-size: 1rem;
     padding: 12px 16px;
@@ -703,13 +703,13 @@ body {
 .gb-loading, .gb-empty {
     text-align: center; padding: 24px 16px;
     font-family: var(--font-sans); font-size: 0.82rem;
-    color: #597ef7; font-style: italic;
+    color: #8c8c8c; font-style: italic;
 }
 
 .gb-entry {
     display: flex; gap: 12px;
     background: linear-gradient(155deg, #fff0f6 30%, #ffd6e7 100%);
-    border-left: 2px solid #597ef7;
+    border-left: 2px solid #8c8c8c;
     border-radius: 0 6px 6px 0;
     padding: 12px 16px;
     animation: entryIn 0.45s ease;
@@ -721,7 +721,7 @@ body {
 .gb-avatar {
     width: 36px; height: 36px;
     border-radius: 50%;
-    background: linear-gradient(135deg, #597ef7, #597ef7);
+    background: linear-gradient(135deg, #8c8c8c, #8c8c8c);
     display: flex; align-items: center; justify-content: center;
     font-family: var(--font-sans); font-weight: 700;
     font-size: 0.9rem; color: #fff; flex-shrink: 0;
@@ -734,7 +734,7 @@ body {
 }
 .gb-entry-msg {
     font-family: var(--font-serif);
-    font-size: 0.95rem; color: #597ef7;
+    font-size: 0.95rem; color: #8c8c8c;
     line-height: 1.55; white-space: pre-wrap;
 }
 
@@ -761,7 +761,7 @@ body {
 }
 .envelope-tap {
     font-family: var(--font-sans);
-    font-size: 0.78rem; letter-spacing: 0.16em; color: #597ef7;
+    font-size: 0.78rem; letter-spacing: 0.16em; color: #8c8c8c;
 }
 
 .gift-content {
@@ -775,7 +775,7 @@ body {
 .gift-message {
     font-family: var(--font-serif);
     font-style: italic;
-    font-size: 1rem; color: var(--cream);
+    font-size: 1rem; color: #8c8c8c;
     line-height: 1.8; margin-bottom: 22px;
 }
 .qr-area {
@@ -819,13 +819,13 @@ body {
     position: relative; z-index: 1;
     text-align: center;
     padding: 55px 20px 44px;
-    border-top: 1px solid #597ef7;
+    border-top: 1px solid #8c8c8c;
     background: linear-gradient(0deg, rgba(0,0,0,0.28), transparent);
 }
-.footer-symbol { font-size: 2.6rem; color: #597ef7; opacity: 0.55; margin-bottom: 14px; }
+.footer-symbol { font-size: 2.6rem; color: #8c8c8c; opacity: 0.55; margin-bottom: 14px; }
 .footer-names  { font-family: var(--font-script); font-size: 2.1rem; color: #c41d7f; margin-bottom: 8px; }
-.footer-date   { font-family: var(--font-sans); font-size: 0.82rem; letter-spacing: 0.32em; color: #597ef7; margin-bottom: 12px; }
-.footer-wish   { font-family: var(--font-serif); font-style: italic; font-size: 1rem; color: #597ef7; opacity: 0.65; letter-spacing: 0.1em; }
+.footer-date   { font-family: var(--font-sans); font-size: 0.82rem; letter-spacing: 0.32em; color: #8c8c8c; margin-bottom: 12px; }
+.footer-wish   { font-family: var(--font-serif); font-style: italic; font-size: 1rem; color: #8c8c8c; opacity: 0.65; letter-spacing: 0.1em; }
 
 /* ── Nút nhạc nền ── */
 .music-btn {
@@ -834,7 +834,7 @@ body {
     width: 50px; height: 50px;
     border-radius: 50%;
     background: linear-gradient(155deg, #fff0f6 30%, #ffd6e7 100%);
-    color: #597ef7;
+    color: #8c8c8c;
     border: none;
     font-size: 1.3rem;
     cursor: pointer;

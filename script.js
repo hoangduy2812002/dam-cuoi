@@ -15,7 +15,6 @@ function initGuestName() {
   const checkDR = segments[0][1];
 
   if (checkDR.toLowerCase() === "d" || checkDR.toLocaleLowerCase() === "D") {
-
     document.getElementById("ngayCuoi").innerHTML = "19/09/2026";
     checkNgayGio = true;
   }
@@ -182,8 +181,8 @@ let WEDDING_DATE = new Date("2026-09-20T11:00:00+07:00");
 
 function startCountdown() {
   function tick() {
-    if(checkNgayGio){
-        WEDDING_DATE = new Date("2026-09-19T11:00:00+07:00")
+    if (checkNgayGio) {
+      WEDDING_DATE = new Date("2026-09-19T11:00:00+07:00");
     }
     const now = new Date();
     const diff = WEDDING_DATE - now;
