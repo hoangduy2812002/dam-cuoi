@@ -186,7 +186,55 @@ const danhSachKhachMoi = [
     ten: "Vợ chồng O Dung",
     link: "vo-chong-o-dung"
   },
+  {
+    id: 37,
+    ten: "Anh Huy",
+    link: "anh-huy"
+  },
+  {
+    id: 38,
+    ten: "Vợ chồng anh Huy",
+    link: "vo-chong-anh-huy"
+  },
+  {
+    id: 39,
+    ten: "Ba mẹ",
+    link: "ba-me"
+  },
+  {
+    id: 40,
+    ten: "Ba",
+    link: "ba"
+  },
+  {
+    id: 41,
+    ten: "Mẹ",
+    link: "me"
+  },
+  {
+    id: 42,
+    ten: "Em Vy",
+    link: "em-vy"
+  },
+  {
+    id: 43,
+    ten: "Em Thuỳ Dung",
+    link: "em-thuy-dung"
+  },
+  {
+    id: 44,
+    ten: "Em Dũng",
+    link: "em-dung"
+  },
+  {
+    id: 45,
+    ten: "Em Dương",
+    link: "em-duong"
+  },
 
+
+
+  
   // ============== Chu re
 
   {
