@@ -8,7 +8,6 @@
 // Tra trong danhSachKhachMoi (danhSachKhachMoi.js) để hiện tên lên bìa.
 let checkNgayGio = false;
 function initGuestName() {
-  console.log('------initGuestName',)
 
   if (typeof danhSachKhachMoi === "undefined") return;
 
