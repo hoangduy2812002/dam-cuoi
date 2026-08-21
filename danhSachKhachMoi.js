@@ -234,7 +234,7 @@ const danhSachKhachMoi = [
 
 
 
-  
+
   // ============== Chu re
 
   {
@@ -527,5 +527,10 @@ const danhSachKhachMoi = [
     id: 157,
     ten: "Vợ chồng chị Thảo",
     link: "vo-chong-chi-thao"
+  },
+  {
+    id: 158,
+    ten: "Bạn Nhị Thống + người thương",
+    link: "ban-nhi-thong-va-nguoi-thuong"
   },
 ];
