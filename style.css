@@ -95,13 +95,14 @@ body {
     /* background: linear-gradient(155deg, #1a5a9e 0%, #0a3060 100%); */
     background: linear-gradient(155deg, #fff0f6 30%, #ffd6e7 100%);
     /* border: 1.5px solid #8c8c8c; */
-    border: 1.5px solid #8c8c8c;
+    /* border: 0.5px solid #8c8c8c; */
     border-radius: 4px;
     padding: 44px 52px;
     width: min(460px, 88vw);
     text-align: center;
-    box-shadow: 0 0 80px rgba(0,0,0,0.85), inset 0 0 40px rgba(0, 10, 30, 0.3);
+    /* box-shadow: 0 0 20px rgba(0,0,0,0.85), inset 0 0 20px rgba(0, 10, 30, 0.3); */
     animation: cardAppear 1.3s cubic-bezier(0.22, 0.61, 0.36, 1) both;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 @keyframes cardAppear {
@@ -118,7 +119,7 @@ body {
     height: 26px;
     border-color: #8c8c8c;
     border-style: solid;
-    opacity: 0.7;
+    opacity: 0.5;
 }
 .cover-card::before { top: 10px; left: 10px;   border-width: 2px 0 0 2px; }
 .cover-card::after  { bottom: 10px; right: 10px; border-width: 0 2px 2px 0; }
@@ -150,8 +151,7 @@ body {
     font-family: var(--font-script);
     color: #8c8c8c;
     font-size: 2.1rem;
-    line-height: 1;
-    margin: 2px 0;
+    line-height:1;
 }
 
 .cover-divider {
@@ -586,7 +586,7 @@ body {
     display: flex;
     justify-content: center; align-items: center;
     gap: 10px; flex-wrap: wrap;
-    margin-bottom: 22px;
+    /* margin-bottom: 22px; */
 }
 .cd-item { display: flex; flex-direction: column; align-items: center; }
 .cd-num {

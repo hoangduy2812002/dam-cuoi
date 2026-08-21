@@ -57,7 +57,7 @@
                 <div class="cover-top-symbol">❦</div>
 
                 <h1 class="cover-name cover-groom-name">Hoàng Duy</h1>
-                <div class="cover-and">&amp;</div>
+                <div class="cover-and" >&amp;</div>
                 <h1 class="cover-name cover-bride-name">Anh Thư</h1>
 
                 <div class="cover-divider">
@@ -137,7 +137,8 @@
             <h2 class="section-title animate-on-scroll">TIỆC CƯỚI TẠI TƯ GIA</h2>
 
             <div class="venue-info animate-on-scroll">
-                <p class="venue-address">Tổ 15 - Ấp Trung Hoà<br> Xã Xuân Bắc - TP. Đồng Nai</p>
+                <p class="venue-address" id="diaChiXa">Tổ 15 - Ấp Trung Hoà </p>
+                <p class="venue-address" id="diaChiThanhPho">Xã Xuân Bắc - TP. Đồng Nai</p>
                 <p class="venue-invite">Trân trọng kính mời</p>
                 <p class="venue-guest" id="venueGuestName">Quý Khách</p>
                 <p class="venue-invite-sub">Đến dự buổi tiệc chung vui cùng gia đình chúng tôi</p>
@@ -158,7 +159,7 @@
                 </div>
 
                 <div class="party-year">2026</div>
-                <div class="party-lunar">(NHẰM NGÀY 10 THÁNG 08 NĂM BÍNH NGỌ)</div>
+                <div class="party-lunar">(NHẰM NGÀY <span id="ngayCuoiCoDau">10</span> THÁNG 08 NĂM BÍNH NGỌ)</div>
 
             </div>
 
@@ -195,10 +196,11 @@
                 allowfullscreen="" loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade">
             </iframe> -->
-                <iframe
+                <iframe id="myIframe" title="Bản đồ địa điểm tiệc cưới"
                     src="https://www.google.com/maps/embed?pb=!4v1787233719648!6m8!1m7!1sO4_Na7Z9-nxYoQt05nsVvQ!2m2!1d11.04140427819962!2d107.2871458110516!3f114.92327829611365!4f-12.038838348841779!5f0.7820865974627469"
-                    width="100%" height="280" style="border:0; border-radius:8px; display:block;" loading="lazy"
-                    referrerpolicy="strict-origin-when-cross-origin"></iframe>
+                    width="100%" height="280" style="border:0; border-radius:8px; display:block;" allowfullscreen=""
+                    loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
             </div>
         </section>
 
@@ -237,11 +239,31 @@
                         onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
                     <div class="album-placeholder"><span>📷</span><span>Ảnh cưới 6</span></div>
                 </div>
-                <div class="album-item album-item-wide" onclick="openLightbox(this)">
+                <div class="album-item" onclick="openLightbox(this)">
                     <img src="images/anh7.jpg" alt="Ảnh cưới 7"
                         onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
                     <div class="album-placeholder"><span>📷</span><span>Ảnh cưới 7</span></div>
                 </div>
+                <div class="album-item" onclick="openLightbox(this)">
+                    <img src="images/anh8.jpg" alt="Ảnh cưới 8"
+                        onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+                    <div class="album-placeholder"><span>📷</span><span>Ảnh cưới 8</span></div>
+                </div>
+                <div class="album-item" onclick="openLightbox(this)">
+                    <img src="images/anh9.jpg" alt="Ảnh cưới 9"
+                        onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+                    <div class="album-placeholder"><span>📷</span><span>Ảnh cưới 9</span></div>
+                </div>
+                <div class="album-item" onclick="openLightbox(this)">
+                    <img src="images/anh10.jpg" alt="Ảnh cưới 10"
+                        onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+                    <div class="album-placeholder"><span>📷</span><span>Ảnh cưới 10</span></div>
+                </div>
+                <!-- <div class="album-item album-item-wide" onclick="openLightbox(this)">
+                    <img src="images/anh7.jpg" alt="Ảnh cưới 7"
+                        onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+                    <div class="album-placeholder"><span>📷</span><span>Ảnh cưới 7</span></div>
+                </div> -->
             </div>
         </section>
 
@@ -263,7 +285,7 @@
             <div class="gift-wrapper animate-on-scroll">
                 <div class="gift-envelope" id="giftEnvelope" onclick="toggleGift()">
                     <div class="envelope-icon">🧧</div>
-                    <p class="envelope-tap">Nhấn để mở</p>
+                    <p class="envelope-tap" style="color: black;">Nhấn để mở</p>
                 </div>
                 <div class="gift-content" id="giftContent">
                     <p class="gift-message">Mọi sự chúc mừng của quý khách<br>là niềm hạnh phúc lớn nhất của chúng tôi
@@ -272,7 +294,7 @@
                         <!-- Đặt ảnh QR tại images/qr-chu-re.png và images/qr-co-dau.png -->
                         <div class="qr-card">
                             <p class="qr-label">🤵 Chú rể</p>
-                            <img src="images/qr-chu-re.png" alt="QR Chú rể" class="qr-img"
+                            <img src="images/qr_chu_re.jpg" alt="QR Chú rể" class="qr-img"
                                 onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
                             <div class="qr-placeholder">
                                 <span>QR Chú rể</span>
@@ -280,13 +302,13 @@
                             </div>
                         </div>
                         <div class="qr-card">
-                            <!-- <p class="qr-label">👰 Cô dâu</p>
-                        <img src="images/qr-co-dau.png" alt="QR Cô dâu" class="qr-img"
-                             onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
-                        <div class="qr-placeholder">
-                            <span>QR Cô dâu</span>
-                            <span class="qr-hint">images/qr-co-dau.png</span>
-                        </div> -->
+                            <p class="qr-label">👰 Cô dâu</p>
+                            <img src="images/qr_chu_re.jpg" alt="QR Cô dâu" class="qr-img"
+                                onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+                            <div class="qr-placeholder">
+                                <span>QR Cô dâu</span>
+                                <span class="qr-hint">images/qr-co-dau.png</span>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -297,7 +319,7 @@
         <footer class="wedding-footer">
             <div class="footer-symbol">❦</div>
             <p class="footer-names">Hoàng Duy &amp; Anh Thư</p>
-            <p class="footer-date">20 · 09 · 2026</p>
+            <p class="footer-date">19 & 20 - 09 - 2026</p>
             <p class="footer-wish">Trăm Năm Hạnh Phúc</p>
         </footer>
 

@@ -12,15 +12,22 @@ function initGuestName() {
 
   const segments = window.location.search.split("?").filter(Boolean);
 
-  const checkDR = segments[0][1];
+  let checkDR;
+  if (segments?.length > 0) {
+    checkDR = segments[0][1];
+  }
 
-  if (checkDR.toLowerCase() === "d" || checkDR.toLocaleLowerCase() === "D") {
+
+  if (checkDR?.toLowerCase() === "d" || checkDR?.toLocaleLowerCase() === "D") {
     document.getElementById("ngayCuoi").innerHTML = "19/09/2026";
+    document.getElementById("diaChiXa").innerHTML = "Tổ 10 - Thôn Đức Hạnh";
+    document.getElementById("diaChiThanhPho").innerHTML = "Xã Hoài Đức - T. Lâm Đồng";
+    document.getElementById("myIframe").src = "https://www.google.com/maps/embed?pb=!4v1787282968362!6m8!1m7!1s6HsXQ1FwjchjKWQmYexDJQ!2m2!1d11.14390193106422!2d107.5005462620312!3f303.1864751783244!4f23.929159769505247!5f0.7820865974627469";
     checkNgayGio = true;
   }
 
   const slug = decodeURIComponent(
-    segments[segments.length - 1].split("/").slice(2).join("/") || ""
+    segments[segments.length - 1]?.split("/").slice(2).join("/") || ""
   )
     .replace(/\.html$/i, "")
     .toLowerCase();
@@ -30,13 +37,16 @@ function initGuestName() {
   const guest = danhSachKhachMoi.find(k => k.link.toLowerCase() === slug);
 
   if (!guest) return;
+
   document.title = `Hoàng Duy & Anh Thư - Kính mời ${guest.ten}`;
 
   // Điền tên khách mời ở cả bìa thiệp và phần thông tin nhà hàng
-  ["coverGuestName", "venueGuestName"].forEach(id => {
+  ["coverGuestName", "venueGuestName",].forEach(id => {
     const el = document.getElementById(id);
     if (el) el.textContent = guest.ten;
   });
+
+  document.getElementById("gbName").value = guest?.ten;
 }
 
 // ── TRÁI TIM RƠI ────────────────────────────────
@@ -114,6 +124,7 @@ function playMusic() {
   if (checkNgayGio) {
     document.getElementById("gioCuoi").innerHTML = "THỨ BẢY";
     document.getElementById("ngayCuoiDau").innerHTML = "19";
+    document.getElementById("ngayCuoiCoDau").innerHTML = "09";
   }
 
   const audio = document.getElementById("bgMusic");
@@ -127,7 +138,7 @@ function playMusic() {
         btn.title = "Tắt nhạc";
       }
     })
-    .catch(() => {}); // Trình duyệt có thể chặn – người dùng bấm nút để bật
+    .catch(() => { }); // Trình duyệt có thể chặn – người dùng bấm nút để bật
 }
 
 function toggleMusic() {
@@ -144,7 +155,7 @@ function toggleMusic() {
         btn.classList.add("playing");
         btn.classList.remove("muted");
       })
-      .catch(() => {});
+      .catch(() => { });
   } else {
     audio.pause();
     btn.textContent = "🔇";
@@ -180,36 +191,40 @@ function openInvitation() {
 let WEDDING_DATE = new Date("2026-09-20T11:00:00+07:00");
 
 function startCountdown() {
-  function tick() {
-    if (checkNgayGio) {
-      WEDDING_DATE = new Date("2026-09-19T11:00:00+07:00");
+  try {
+    function tick() {
+      if (checkNgayGio) {
+        WEDDING_DATE = new Date("2026-09-19T11:00:00+07:00");
+      }
+      const now = new Date();
+      const diff = WEDDING_DATE - now;
+
+      const pad = n => String(Math.max(0, n)).padStart(2, "0");
+
+      if (diff <= 0) {
+        ["cdDays", "cdHours", "cdMinutes", "cdSeconds"].forEach(id => {
+          document.getElementById(id).textContent = "00";
+        });
+        clearInterval(timer);
+        return;
+      }
+
+      const days = Math.floor(diff / 86400000);
+      const hours = Math.floor(diff % 86400000 / 3600000);
+      const minutes = Math.floor(diff % 3600000 / 60000);
+      const seconds = Math.floor(diff % 60000 / 1000);
+
+      document.getElementById("cdDays").textContent = pad(days);
+      document.getElementById("cdHours").textContent = pad(hours);
+      document.getElementById("cdMinutes").textContent = pad(minutes);
+      document.getElementById("cdSeconds").textContent = pad(seconds);
     }
-    const now = new Date();
-    const diff = WEDDING_DATE - now;
 
-    const pad = n => String(Math.max(0, n)).padStart(2, "0");
-
-    if (diff <= 0) {
-      ["cdDays", "cdHours", "cdMinutes", "cdSeconds"].forEach(id => {
-        document.getElementById(id).textContent = "00";
-      });
-      clearInterval(timer);
-      return;
-    }
-
-    const days = Math.floor(diff / 86400000);
-    const hours = Math.floor(diff % 86400000 / 3600000);
-    const minutes = Math.floor(diff % 3600000 / 60000);
-    const seconds = Math.floor(diff % 60000 / 1000);
-
-    document.getElementById("cdDays").textContent = pad(days);
-    document.getElementById("cdHours").textContent = pad(hours);
-    document.getElementById("cdMinutes").textContent = pad(minutes);
-    document.getElementById("cdSeconds").textContent = pad(seconds);
+    tick();
+    const timer = setInterval(tick, 1000);
+  } catch (error) {
+    console.log((error))
   }
-
-  tick();
-  const timer = setInterval(tick, 1000);
 }
 
 // ── HIỆU ỨNG CUỘN ────────────────────────────
@@ -270,7 +285,8 @@ function initScrollAnimations() {
 
 // ↓ Dán URL Google Apps Script vào đây:
 const APPS_SCRIPT_URL =
-  "https://script.google.com/macros/s/AKfycbx1En3ZmVfp24hGDAWWJgmyre8Q8ps9Db4O1BnkAS2wRdg2G57W-yP6qoOvy87oGL_o/exec";
+  // "https://script.google.com/macros/s/AKfycbx1En3ZmVfp24hGDAWWJgmyre8Q8ps9Db4O1BnkAS2wRdg2G57W-yP6qoOvy87oGL_o/exec";
+  "https://script.google.com/macros/s/AKfycbxG1Nqbj439i5_44SdD_IYhcPg7quXQ2KrXQsMoWakoNSiuT4aOErCfW6s-Zb4aE8k1Hw/exec";
 
 function loadGuestBook() {
   const list = document.getElementById("gbList");
@@ -293,7 +309,7 @@ function loadGuestBook() {
           '<p class="gb-empty">Hãy là người đầu tiên gửi lời chúc! 💌</p>';
         return;
       }
-      entries.forEach(e => list.appendChild(buildEntry(e)));
+      entries.reverse().forEach(e => list.appendChild(buildEntry(e)));
     })
     .catch(() => {
       list.innerHTML =
@@ -312,6 +328,7 @@ function saveEntry(name, message) {
 }
 
 function buildEntry(entry) {
+
   const div = document.createElement("div");
   div.className = "gb-entry";
   div.innerHTML = `
@@ -319,7 +336,8 @@ function buildEntry(entry) {
         <div class="gb-body">
             <div class="gb-entry-name">${safe(entry.name)}</div>
             <div class="gb-entry-msg">${safe(entry.message)}</div>
-        </div>`;
+        </div>
+        `;
   return div;
 }
 
@@ -342,6 +360,7 @@ if (gbForm) {
   gbForm.addEventListener("submit", e => {
     e.preventDefault();
     const name = document.getElementById("gbName").value.trim();
+
     const message = document.getElementById("gbMessage").value.trim();
     if (!name || !message) return;
     if (name.length > 100 || message.length > 500) {
