@@ -649,8 +649,10 @@ body {
 }
 .venue-guest {
     font-family: var(--font-serif);
-    font-size: 1.15rem; font-weight: 600;
+    font-size: 1.20rem; font-weight: 600;
     color: #c41d7f; line-height: 1.4;
+    animation: envBounce 4s ease-in-out infinite;
+    margin-top: 17px;
 }
 .venue-invite-sub {
     font-family: var(--font-serif);

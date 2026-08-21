@@ -8,6 +8,8 @@
 // Tra trong danhSachKhachMoi (danhSachKhachMoi.js) để hiện tên lên bìa.
 let checkNgayGio = false;
 function initGuestName() {
+  console.log('------initGuestName',)
+
   if (typeof danhSachKhachMoi === "undefined") return;
 
   const segments = window.location.search.split("?").filter(Boolean);
