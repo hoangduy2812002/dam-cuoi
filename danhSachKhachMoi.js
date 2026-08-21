@@ -176,6 +176,16 @@ const danhSachKhachMoi = [
     ten: "Bạn Ly iu và Em Sa",
     link: "ban-ly-iu-va-em-sa"
   },
+  {
+    id: 35,
+    ten: "O Dung",
+    link: "o-dung"
+  },
+  {
+    id: 36,
+    ten: "Vợ chồng O Dung",
+    link: "vo-chong-o-dung"
+  },
 
   // ============== Chu re
 
