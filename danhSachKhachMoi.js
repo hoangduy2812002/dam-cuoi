@@ -464,5 +464,10 @@ const danhSachKhachMoi = [
     id: 156,
     ten: "Cô Dung",
     link: "co-dung"
-  }
+  },
+  {
+    id: 157,
+    ten: "Vợ chồng chị Thảo",
+    link: "vo-chong-chi-thao"
+  },
 ];
