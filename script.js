@@ -25,7 +25,7 @@ function initGuestName() {
     document.getElementById("myIframe").src = "https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3914.5894640863276!2d107.50056!3d11.143922!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTHCsDA4JzM4LjEiTiAxMDfCsDMwJzAyLjAiRQ!5e0!3m2!1svi!2s!4v1787296528578!5m2!1svi!2s";
     checkNgayGio = true;
   }else{
-    // document.getElementById("myIframe").src = "https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3915.9630930859425!2d107.287165!3d11.041394!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTHCsDAyJzI5LjAiTiAxMDfCsDE3JzEzLjgiRQ!5e0!3m2!1svi!2s!4v1787295714607!5m2!1svi!2";
+    document.getElementById("myIframe").src = "https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3915.9630930859425!2d107.287165!3d11.041394!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTHCsDAyJzI5LjAiTiAxMDfCsDE3JzEzLjgiRQ!5e0!3m2!1svi!2s!4v1787295714607!5m2!1svi!2";
 
   }
 
