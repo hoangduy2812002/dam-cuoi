@@ -577,7 +577,8 @@ body {
 .sched-divider { width: 1px; height: 38px; background: rgba(201,162,39,0.25); }
 
 /* Đếm ngược */
-.countdown-wrapper { text-align: center; }
+.countdown-wrapper { text-align: center;
+}
 .cd-title {
     font-family: var(--font-sans);
     font-size: 0.72rem; letter-spacing: 0.22em;
@@ -608,7 +609,7 @@ body {
     font-size: 0.58rem; letter-spacing: 0.12em;
     color: #8c8c8c; margin-top: 5px;
 }
-.cd-sep { font-size: 2.2rem; color: var(--gold); opacity: 0.45; margin-top: -10px; }
+.cd-sep { font-size: 2.2rem; color: #c41d7f; opacity: 0.45; margin-top: -10px; }
 
 .add-cal-btn {
     display: inline-block;
