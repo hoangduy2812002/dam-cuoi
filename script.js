@@ -24,6 +24,9 @@ function initGuestName() {
     document.getElementById("diaChiThanhPho").innerHTML = "Xã Hoài Đức - T. Lâm Đồng";
     document.getElementById("myIframe").src = "https://www.google.com/maps/embed?pb=!4v1787282968362!6m8!1m7!1s6HsXQ1FwjchjKWQmYexDJQ!2m2!1d11.14390193106422!2d107.5005462620312!3f303.1864751783244!4f23.929159769505247!5f0.7820865974627469";
     checkNgayGio = true;
+  }else{
+    document.getElementById("myIframe").src = "https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3915.9630930859425!2d107.287165!3d11.041394!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTHCsDAyJzI5LjAiTiAxMDfCsDE3JzEzLjgiRQ!5e0!3m2!1svi!2s!4v1787295714607!5m2!1svi!2";
+
   }
 
   const slug = decodeURIComponent(
