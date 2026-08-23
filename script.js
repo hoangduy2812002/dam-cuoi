@@ -40,9 +40,14 @@ function initGuestName() {
     .replace(/\.html$/i, "")
     .toLowerCase();
 
+    const tenNguoiMoi = slug?.split('&')[0]
+
+
   if (!slug) return;
 
-  const guest = danhSachKhachMoi.find(k => k.link.toLowerCase() === slug);
+  // const guest = danhSachKhachMoi.find(k => k.link.toLowerCase() === slug);
+  const guest = danhSachKhachMoi.find(k => k.link.toLowerCase() === tenNguoiMoi);
+
 
   if (!guest) return;
 
