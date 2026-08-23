@@ -42,9 +42,11 @@
             <div class="cover-card-inner">
                 <div class="cover-top-symbol">❦</div>
 
-                <h1 class="cover-name cover-groom-name">Hoàng Duy</h1>
-                <div class="cover-and">&amp;</div>
-                <h1 class="cover-name cover-bride-name">Anh Thư</h1>
+                <div id="orn_thiep">
+                    <h1 class="cover-name cover-groom-name">Hoàng Duy</h1>
+                    <div class="cover-and">&amp;</div>
+                    <h1 class="cover-name cover-bride-name">Anh Thư</h1>
+                </div>
 
                 <div class="cover-divider">
                     <span class="div-line"></span>
@@ -73,9 +75,11 @@
         <!-- ── TÊN CẶP ĐÔI ── -->
         <section class="section-header">
             <div class="header-inner animate-on-scroll">
-                <h1 class="header-groom">Hoàng Duy</h1>
-                <div class="header-and">&amp;</div>
-                <h1 class="header-bride">Anh Thư</h1>
+                <div id="orn_thiep_trong">
+                    <h1 class="header-groom">Hoàng Duy</h1>
+                    <div class="header-and">&amp;</div>
+                    <h1 class="header-bride">Anh Thư</h1>
+                </div>
             </div>
         </section>
 
@@ -83,7 +87,7 @@
         <section class="section">
             <h2 class="section-title animate-on-scroll">LỄ GIA TIÊN</h2>
 
-            <div class="parents-wrapper animate-on-scroll">
+            <div class="parents-wrapper animate-on-scroll" id="orn_thiep_bame">
                 <div class="parents-block">
                     <p class="parents-label">Ông Bà</p>
                     <p class="parents-name">Tôma Đặng Văn Doanh</p>
@@ -101,12 +105,15 @@
 
             <div class="announce-block animate-on-scroll">
                 <p class="announce-top">TRÂN TRỌNG BÁO TIN</p>
-                <p class="announce-sub">LỄ TÂN HÔN CỦA CON CHÚNG TÔI</p>
-                <h2 class="couple-name">Đặng Hoàng Duy</h2>
-                <p class="couple-title">TRƯỞNG NAM</p>
-                <div class="couple-and">&amp;</div>
-                <h2 class="couple-name">Trần Thị Anh Thư</h2>
-                <p class="couple-title">TRƯỞNG NỮ</p>
+                <p class="announce-sub">LỄ <span id="checkTenLe">TÂN HÔN</span> CỦA CON CHÚNG TÔI</p>
+                <div id="orn_ten_vo_chong">
+                    <h2 class="couple-name">Đặng Hoàng Duy <p class="couple-title">TRƯỞNG NAM</p>
+                    </h2>
+                    <div class="couple-and">&amp;</div>
+                    <h2 class="couple-name">Trần Thị Anh Thư <p class="couple-title">TRƯỞNG NỮ</p>
+                    </h2>
+                </div>
+
             </div>
 
             <div class="gia-tien-card animate-on-scroll">
@@ -183,10 +190,9 @@
                 referrerpolicy="no-referrer-when-downgrade">
             </iframe> -->
                 <!-- <iframe src="" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe> -->
-                <iframe id="myIframe" title="Bản đồ địa điểm tiệc cưới" 
-                    src=""
-                    width="100%" height="280" style="border:0; border-radius:8px; display:block;" allowfullscreen=""
-                    loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                <iframe id="myIframe" title="Bản đồ địa điểm tiệc cưới" src="" width="100%" height="280"
+                    style="border:0; border-radius:8px; display:block;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
                 </iframe>
             </div>
         </section>
@@ -207,12 +213,12 @@
                     <div class="album-placeholder"><span>📷</span><span>Ảnh cưới 2</span></div>
                 </div>
                 <div class="album-item" onclick="openLightbox(this)">
-                    <img src="images/anh3.jpg" alt="Ảnh cưới 3"
+                    <img src="images/anh7.jpg" alt="Ảnh cưới 3"
                         onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
                     <div class="album-placeholder"><span>📷</span><span>Ảnh cưới 3</span></div>
                 </div>
                 <div class="album-item" onclick="openLightbox(this)">
-                    <img src="images/anh4.jpg" alt="Ảnh cưới 4"
+                    <img src="images/anh8.jpg" alt="Ảnh cưới 4"
                         onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
                     <div class="album-placeholder"><span>📷</span><span>Ảnh cưới 4</span></div>
                 </div>
@@ -227,12 +233,12 @@
                     <div class="album-placeholder"><span>📷</span><span>Ảnh cưới 6</span></div>
                 </div>
                 <div class="album-item" onclick="openLightbox(this)">
-                    <img src="images/anh7.jpg" alt="Ảnh cưới 7"
+                    <img src="images/anh3.jpg" alt="Ảnh cưới 7"
                         onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
                     <div class="album-placeholder"><span>📷</span><span>Ảnh cưới 7</span></div>
                 </div>
                 <div class="album-item" onclick="openLightbox(this)">
-                    <img src="images/anh8.jpg" alt="Ảnh cưới 8"
+                    <img src="images/anh4.jpg" alt="Ảnh cưới 8"
                         onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
                     <div class="album-placeholder"><span>📷</span><span>Ảnh cưới 8</span></div>
                 </div>
@@ -290,7 +296,7 @@
                         </div>
                         <div class="qr-card">
                             <p class="qr-label">👰 Cô dâu</p>
-                            <img src="images/qr_chu_re.jpg" alt="QR Cô dâu" class="qr-img"
+                            <img src="images/qr_co_dau.jpg" alt="QR Cô dâu" class="qr-img"
                                 onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
                             <div class="qr-placeholder">
                                 <span>QR Cô dâu</span>
@@ -305,7 +311,9 @@
         <!-- ── FOOTER ── -->
         <footer class="wedding-footer">
             <div class="footer-symbol">❦</div>
-            <p class="footer-names">Hoàng Duy &amp; Anh Thư</p>
+            <div class="footer-names" id="orn_footer_ten_vo_chong"><span>Hoàng Duy</span><span style="
+            padding-left: 4px; padding-right: 4px;
+            "> &amp;</span> <span>Anh Thư</span></div>
             <p class="footer-date">19 & 20 · 09 · 2026</p>
             <p class="footer-wish">Trăm Năm Hạnh Phúc</p>
         </footer>
@@ -319,7 +327,7 @@
 
     <!-- Nhạc nền đám cưới – đặt file tại music/nhac.m4a -->
     <audio id="bgMusic" loop>
-        <source src="nhac.m4a" type="audio/mpeg">
+        <source src="nhac.mp4" type="audio/mpeg">
     </audio>
 
     <!-- Nút bật/tắt nhạc -->

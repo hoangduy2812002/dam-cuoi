@@ -25,6 +25,10 @@ function initGuestName() {
     document.getElementById("diaChiThanhPho").innerHTML = "Xã Hoài Đức - T. Lâm Đồng";
     document.getElementById("myIframe").src = "https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3914.5894640863276!2d107.50056!3d11.143922!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTHCsDA4JzM4LjEiTiAxMDfCsDMwJzAyLjAiRQ!5e0!3m2!1svi!2s!4v1787296528578!5m2!1svi!2s";
     checkNgayGio = true;
+    document.getElementById("checkTenLe").innerHTML = "VU QUY";
+
+    doiViTri();
+
   }else{
     document.getElementById("myIframe").src = "https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3915.9630930859425!2d107.287165!3d11.041394!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTHCsDAyJzI5LjAiTiAxMDfCsDE3JzEzLjgiRQ!5e0!3m2!1svi!2s!4v1787295714607!5m2!1svi!2";
 
@@ -42,7 +46,7 @@ function initGuestName() {
 
   if (!guest) return;
 
-  document.title = `Hoàng Duy & Anh Thư - Kính mời ${guest.ten}`;
+  // document.title = `Hoàng Duy & Anh Thư - Kính mời ${guest.ten}`;
 
   // Điền tên khách mời ở cả bìa thiệp và phần thông tin nhà hàng
   ["coverGuestName", "venueGuestName",].forEach(id => {
@@ -51,6 +55,24 @@ function initGuestName() {
   });
 
   document.getElementById("gbName").value = guest?.ten;
+}
+
+function doiViTri(){
+  const orn_thiep = document.getElementById("orn_thiep");
+  [...orn_thiep.children].reverse().forEach(el => orn_thiep.appendChild(el));
+  // =====
+  const orn_thiep_trong = document.getElementById("orn_thiep_trong");
+  [...orn_thiep_trong.children].reverse().forEach(el => orn_thiep_trong.appendChild(el));
+// =====
+const orn_thiep_bame = document.getElementById("orn_thiep_bame");
+[...orn_thiep_bame.children].reverse().forEach(el => orn_thiep_bame.appendChild(el)); 
+
+const orn_ten_vo_chong = document.getElementById("orn_ten_vo_chong");
+[...orn_ten_vo_chong.children].reverse().forEach(el => orn_ten_vo_chong.appendChild(el)); 
+// 
+const orn_footer_ten_vo_chong = document.getElementById("orn_footer_ten_vo_chong");
+[...orn_footer_ten_vo_chong.children].reverse().forEach(el => orn_footer_ten_vo_chong.appendChild(el)); 
+
 }
 
 // ── TRÁI TIM RƠI ────────────────────────────────

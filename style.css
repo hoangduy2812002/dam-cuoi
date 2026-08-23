@@ -452,7 +452,8 @@ body {
 .couple-title {
     font-family: var(--font-sans);
     font-size: 0.68rem; letter-spacing: 0.28em;
-    color: #8c8c8c; margin: 5px 0 14px;
+    color: #8c8c8c;
+     margin: 5px 0 14px;
 }
 .couple-and {
     font-family: var(--font-script);
