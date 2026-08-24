@@ -11,7 +11,12 @@ function initGuestName() {
 
   if (typeof danhSachKhachMoi === "undefined") return;
 
-  const segments = window.location.search.split("?").filter(Boolean);
+  // const result = chuyenDoiMXH.map(item => decodeURIComponent(item));
+  // const 
+  let segments = window.location.search.split("?").filter(Boolean);
+  segments = segments.map(item => decodeURIComponent(item));
+
+  console.log(segments)
 
   let checkDR;
   if (segments?.length > 0) {
