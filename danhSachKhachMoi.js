@@ -231,7 +231,11 @@ const danhSachKhachMoi = [
     ten: "Em Dương",
     link: "em-duong"
   },
-
+  {
+    id: 46,
+    ten: "Bạn Văn",
+    link: "ban-van"
+  },
 
 
 

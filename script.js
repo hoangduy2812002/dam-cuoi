@@ -394,6 +394,7 @@ if (gbForm) {
 
     const message = document.getElementById("gbMessage").value.trim();
     if (!name || !message) return;
+   
     if (name.length > 100 || message.length > 500) {
       alert("Tên tối đa 100 ký tự, lời chúc tối đa 500 ký tự.");
       return;
