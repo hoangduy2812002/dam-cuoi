@@ -236,6 +236,16 @@ const danhSachKhachMoi = [
     ten: "Bạn Văn",
     link: "ban-van"
   },
+  {
+    id: 47,
+    ten: "Em Mộc Miên",
+    link: "em-moc-mien"
+  },
+  {
+    id: 48,
+    ten: "Em An Nhiên",
+    link: "em-an-nhien"
+  },
 
 
 
