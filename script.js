@@ -16,7 +16,7 @@ function initGuestName() {
   let segments = window.location.search.split("?").filter(Boolean);
   segments = segments.map(item => decodeURIComponent(item));
 
-  console.log(segments)
+  // console.log(segments)
 
   let checkDR;
   if (segments?.length > 0) {
