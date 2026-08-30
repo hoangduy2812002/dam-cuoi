@@ -577,4 +577,14 @@ const danhSachKhachMoi = [
     ten: "Bạn Trân Hà + người thương",
     link: "ban-tran-ha-va-nguoi-thuong"
   },
+  {
+    id: 165,
+    ten: "Bạn Yến Nhi + người thương",
+    link: "ban-yen-nhi-va-nguoi-thuong"
+  },
+  {
+    id: 166,
+    ten: "Anh Cường photo",
+    link: "anh-cuong-photo"
+  },
 ];
